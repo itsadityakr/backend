@@ -1,4 +1,4 @@
-## Introduction: What is Data Modeling?
+# Introduction: What is Data Modeling?
 
 Here you won’t learn how to connect to a database, but rather how to create the model schemas that define your data's structure.
 
