@@ -50,6 +50,26 @@ This journey is structured in stages, starting from backend basics, moving towar
 
 ---
 
+### **4️⃣ Folder Structure and Settings**
+
+[Navigate to Code](https://github.com/itsadityakr/backend/tree/main/code/_4_folder_structure_and_settings)
+
+* **Setting up a Professional, Production-level Backend Project Structure** → [Open Notes](https://github.com/itsadityakr/backend/tree/main/notes/8)
+
+---
+
+### **5️⃣ Connect Database to MERN**
+
+[Navigate to Code](https://github.com/itsadityakr/backend/tree/main/code/_5_connect_database_in_MERN)
+
+* **Introduction: Your Cloud Database** → [Open Notes](https://github.com/itsadityakr/backend/tree/main/notes/9)
+* **Connecting Your Backend to the Database** → [Open Notes](https://github.com/itsadityakr/backend/tree/main/notes/10)
+* **`async` `await`** → [Open Notes](https://github.com/itsadityakr/backend/tree/main/notes/11)
+* **Error Handling in JS** → [Open Notes](https://github.com/itsadityakr/backend/tree/main/notes/12)
+* **Promises in JavaScript.** → [Open Notes](https://github.com/itsadityakr/backend/tree/main/notes/13)
+
+---
+
 ## 🔧 Recommended Tools
 
 To follow this repository effectively, you should have the following tools installed and ready:
@@ -59,6 +79,7 @@ To follow this repository effectively, you should have the following tools insta
 * **Mongoose** – MongoDB object modeling tool
 * **Axios** – HTTP client for frontend-backend communication
 * **Git & GitHub** – Version control and repository management
+* **dotenv** –
 
 > 💡 Tip: Make sure to install Node.js and MongoDB locally to run code examples smoothly.
 
@@ -97,7 +118,3 @@ This repository is designed for **hands-on learning**.
 > *Happy Learning! 🚀*
 
 ---
-
-If you want, I can also make a **fully visual, clickable roadmap diagram** for this repository that shows **Backend Setup → Connecting Frontend → Data Modelling** in a clean GitHub-style diagram. This will make your README extremely interactive and easy to follow.
-
-Do you want me to do that next?
