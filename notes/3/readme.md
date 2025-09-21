@@ -1,12 +1,10 @@
-Of course. Here is the updated guide with a specific section explaining how to access and use data from the `.env` file.
-
-## Building Your First Express.js Server 🧑‍💻
+# Building Your First Express.js Server
 
 This guide explains how to set up a basic web server using **Express.js**, a popular and minimalist web framework for Node.js. We'll cover creating the server, understanding its core components, adding routes, and managing configuration with environment variables.
 
 -----
 
-### 1\. Installation and Basic Setup
+## 1\. Installation and Basic Setup
 
 First, you need to add Express to your project. Run the following command in your terminal:
 
@@ -32,23 +30,23 @@ app.listen(port, () => {
 
 -----
 
-### 2\. Understanding the Code
+## 2\. Understanding the Code
 
 Let's break down what each part of this code does.
 
-#### **`const express = require("express");`**
+### **`const express = require("express");`**
 
   * **`require()`** is Node.js's built-in function to import modules. When you write `require("express")`, you are loading the entire Express library that you installed with `npm`. The result is assigned to the `express` constant.
 
-#### **`const app = express();`**
+### **`const app = express();`**
 
   * This line creates an instance of the Express application. You can think of `express` as a blueprint, and `app` as the actual house you build from that blueprint. The `app` object has methods for routing HTTP requests, configuring middleware, and starting the server.
 
-#### **`const port = 3000;`**
+### **`const port = 3000;`**
 
   * A **port** is a numbered communication endpoint on a computer. If your server's IP address is like a building's street address, the port is like a specific apartment number. Port `3000` is commonly used for local development.
 
-#### **`app.get("/", (req, res) => { ... });`**
+### **`app.get("/", (req, res) => { ... });`**
 
 This line defines a route. Let's break it down word by word:
 
@@ -60,13 +58,13 @@ This line defines a route. Let's break it down word by word:
       * **`res`** (Response): An object used to send a response back to the client who made the request.
   * **`res.send("Hello World!")`**: This method on the response object sends a response back to the browser. In this case, it sends the simple text "Hello World\!".
 
-#### **`app.listen(port, () => { ... });`**
+### **`app.listen(port, () => { ... });`**
 
   * This function starts up the server and makes it "listen" for incoming connections on the specified `port`. The second argument is a callback function that runs once the server has successfully started, which we use here to log a confirmation message to the console.
 
 -----
 
-### 3\. Adding More Routes
+## 3\. Adding More Routes
 
 You can define multiple routes for different URLs.
 
@@ -82,7 +80,7 @@ app.get("/html", (req, res) => {
 });
 ```
 
-#### **Why do we need to restart the server?**
+### **Why do we need to restart the server?**
 
 When you run `node index.js`, Node.js reads your file once and loads it into memory. It does not automatically watch for changes you make to the file. If you add a new route (like `/twitter`), the running process has no knowledge of it. You must **stop** the server (with `Ctrl + C`) and **restart** it to load the new code.
 
@@ -90,7 +88,7 @@ When you run `node index.js`, Node.js reads your file once and loads it into mem
 
 -----
 
-### 4\. Using Environment Variables for the Port
+## 4\. Using Environment Variables for the Port
 
 Hardcoding the port number (`const port = 3000;`) can cause problems. When you deploy your application to a hosting service, the service will often assign a port for you. If your code is hardcoded to use port `3000`, it will fail.
 
@@ -137,7 +135,7 @@ The solution is to use **environment variables**.
 
     Now, your application will use the port defined in your `.env` file (2500). If that variable isn't found, it will fall back to using 3000. This makes your application much more flexible and portable.
 
-#### **How `process.env.PORT` Works**
+### **How `process.env.PORT` Works**
 
   * **`process`** is a global object in Node.js that provides information about, and control over, the current Node.js process.
   * **`.env`** is a property on the `process` object that contains all the environment variables that were available when the process was started.

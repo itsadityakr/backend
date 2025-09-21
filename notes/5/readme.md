@@ -1,10 +1,10 @@
-## Creating Your First Backend API
+# Creating Your First Backend API
 
 This document will walk you through every step of creating a simple backend server using Node.js and the Express framework. The goal is to create a server that can provide data (in this case, a list of users) to any application that requests it, such as a future frontend website.
 
 ---
 
-### 1\. Project Structure: Keeping Things Organized
+## 1\. Project Structure: Keeping Things Organized
 
 First, we create a clear folder structure.
 
@@ -22,7 +22,7 @@ This separation is crucial because it keeps your server-side code completely sep
 
 ---
 
-### 2\. Setting Up the Backend
+## 2\. Setting Up the Backend
 
 Navigate into your `backend` folder from your terminal and run the following command:
 
@@ -35,7 +35,7 @@ npm init
 
 The `package.json` file is like an ID card for your project. It contains important metadata such as the project's name, version, and, most importantly, a list of its dependencies (the external packages it needs to run).
 
-#### Modifying `package.json`
+### Modifying `package.json`
 
 1.  **Entry Point**: During the `npm init` process, it will ask for an "entry point." The default is `index.js`. You should change this to `server.js`. If you've already completed the process, you can open `package.json` and manually change the line:
 
@@ -55,7 +55,7 @@ The `package.json` file is like an ID card for your project. It contains importa
 
 ---
 
-### 3\. Writing the Server Code (`server.js`)
+## 3\. Writing the Server Code (`server.js`)
 
 Now, create the `server.js` file inside the `backend` folder and add the following code. Let's break it down line by line.
 
@@ -82,7 +82,7 @@ app.listen(port, () => {
 });
 ```
 
-#### Code Breakdown:
+### Code Breakdown:
 
 -   **`import express from "express";`**
 
@@ -120,7 +120,7 @@ app.listen(port, () => {
 
 ---
 
-### 4\. Running Your Backend Server
+## 4\. Running Your Backend Server
 
 1.  Make sure you are in the `backend` directory in your terminal.
 2.  Run the command:
